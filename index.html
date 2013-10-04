@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fleetwood / Fernandez</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="stylesheets/bootstrap.css" rel="stylesheet" media="screen">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  	<div class="wrap backsplash">
+		<div class="content-container">
+			<div data-bind="page: { id: 'about', source: 'about.html', with: about, showElement: showPage, hideElement: hidePage }"></div>
+			<div data-bind="page: { id: 'projects', source: 'projects.html', with: projects, showElement: showPage, hideElement: hidePage }"></div>
+			<div data-bind="page: { id: 'blog', source: 'blog.html', with: blog, showElement: showPage, hideElement: hidePage }"></div>
+			<div data-bind="page: { id: 'contact', source: 'contact.html', with: contact, showElement: showPage, hideElement: hidePage }"></div>
+			<div data-bind="page: { id: 'details', source: 'project_details.html', with: project_details, showElement: showPage, hideElement: hidePage }"></div>
+		</div>
+		<div class="push"></div>
+  	</div>
+  	<footer>
+  		<div class="row">
+			<div class="col-md-3"><img class="img-circle" /></div>
+			<div class="col-md-2">
+				<ul class="nav">
+					<li><a data-bind="page-href: { path: 'projects', params: ['name'] }">PROJECTS</a></li>
+					<li><a data-bind="page-href: 'about'">ABOUT</a></li>
+					<li><a data-bind="page-href: 'blog'">BLOG</a></li>
+					<li><a data-bind="page-href: 'contact'">CONTACT</a></li>
+				</ul>
+			</div>
+			<div class="col-md-1">
+			</div>
+			<div class="col-md-6">
+				<ul class="nav">
+					<!-- ko foreach: projects.categories -->
+						<li><a href="#" data-bind="page-href: { path: 'projects', params: { name: name } }, text: name"></a></li>
+					<!-- /ko -->
+				</ul>
+			</div>
+		</div>
+	</footer>
+
+	<script src="javascript/knockout-2.3.0.js"></script>
+    <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script src="javascript/pager.min.js"></script>
+    <script src="javascript/data.js"></script>
+    <script src="javascript/engine.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
