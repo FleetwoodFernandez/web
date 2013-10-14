@@ -1,0 +1,22 @@
+﻿<div class="wrap backsplash">
+    <div data-bind="router: { transition:'entrance' }" class="container-container"></div>
+    <div class="push"></div>
+</div>
+<footer>
+    <div class="row">
+        <div class="col-md-3"><a href="#"><img src="#" class="img-circle" /></a></div>
+        <div class="col-md-2">
+            <ul class="nav" data-bind="foreach: router.navigationModel">
+                <li data-bind="css: { active: isActive }">
+                    <a data-bind="attr: { href: hash }, html: title"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-1">
+        </div>
+        <div class="col-md-6">
+            <ul class="nav">
+            </ul>
+        </div>
+    </div>
+</footer>
