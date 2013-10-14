@@ -16,7 +16,24 @@ footer {
   	height: 160px;
 }
 footer {
-	
+	.nav-application {
+	 	.pull-left;
+
+		li {
+			display: list-item;
+			a {
+				display: inline;
+
+				&:hover {
+					background: transparent;
+				}
+			}
+		}
+	}
+
+	.nav-divider {
+		.pull-left;
+	}
 }
 
 @media (max-width: 767px) {

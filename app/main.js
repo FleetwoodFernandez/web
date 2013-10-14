@@ -6,7 +6,8 @@
         'transitions' : '../lib/durandal/js/transitions',
         'knockout': '../lib/knockout/knockout-2.3.0',
         'bootstrap': '../lib/bootstrap/js/bootstrap',
-        'jquery': '../lib/jquery/jquery-1.9.1'
+        'jquery': '../lib/jquery/jquery-1.9.1',
+        'dataservice': '../app/viewmodels/dataservice'
     },
     shim: {
         'bootstrap': {
@@ -18,13 +19,13 @@
 
 define(['durandal/system', 'durandal/app', 'durandal/viewLocator'],  function (system, app, viewLocator) {
     //>>excludeStart("build", true);
-    //system.debug(true);
+    system.debug(true);
     //>>excludeEnd("build");
 
     app.title = 'Fleetwood / Fernandez';
 
     app.configurePlugins({
-        router:true,
+        router: true,
         dialog: true,
         widget: true
     });

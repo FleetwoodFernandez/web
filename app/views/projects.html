@@ -1,6 +1,6 @@
 ﻿<div data-bind="foreach: filtered">
 	<div class="col-md-4 project-grid">
-		<a data-bind="attr: { href: $parent.projectURL(name) }">
+		<a data-bind="attr: { href: $parent.projectURL($index()) }">
 			<div class="project-details">
 				<!-- ko text: name --><!-- /ko -->
 			</div>
