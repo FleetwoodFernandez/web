@@ -1,7 +1,7 @@
-﻿<div class="row">
-	<div class="col-md-10 col-md-offset-1">
-		<section>
-		    <h2 data-bind="html: project().name"></h2>
-		</section>
+﻿<div class="row project-list">
+	<div class="project-scoller">
+	<!-- ko foreach: project().assets -->
+		<div class="project-slide"><img data-bind="attr: { src: path }" /></div>
+	<!--/ko -->
 	</div>
 </div>

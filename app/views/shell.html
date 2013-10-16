@@ -1,4 +1,4 @@
-﻿<div class="wrap backsplash">
+﻿<div data-bind="attr: { 'class': getBackground }">
     <div data-bind="router: { transition:'entrance' }" class="container-container"></div>
     <div class="push"></div>
 </div>
@@ -12,11 +12,13 @@
                 </li>
             </ul>
             <span class="nav-divider">/</span>
+            <!-- ko if: displayProjectFilters -->
             <ul class="nav nav-application" data-bind="foreach: projectFilters">
                 <li data-bind="css: { active: isActive }">
                     <a data-bind="attr: { href: hash + type }, html: title"></a>
                 </li>
             </ul>
+            <!-- /ko -->
         </div>
     </div>
 </footer>
