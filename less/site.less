@@ -1,3 +1,5 @@
+@footerHeight: 100px;
+
 html,
 body {
 	height: 100%;
@@ -8,25 +10,29 @@ body {
   min-height: 100%;
   height: auto !important;
   height: 100%;
-  margin: 0 auto -160px;
+  margin: 0 auto -@footerHeight;
 }
 
 #push,
 footer {
-  	height: 160px;
+  	height: @footerHeight;
 }
 
 footer {
-	margin: 25px 0;
+	margin: 20px 0;
+	.brand-logo {
+		padding: 15px 25px;
+	}
 	.nav-application {
 	 	.pull-left;
 	 	margin-right: 25px;
 
 		li {
 			display: list-item;
-			margin-bottom: 10px;
+			margin-bottom: 0px;
 			a {
 				display: inline;
+				padding: 0;
 				&:hover {
 					background: transparent;
 				}
@@ -36,7 +42,7 @@ footer {
 
 	.nav-divider {
 		.pull-left;
-		margin-right: 25px;
+		margin: 0 25px;
 	}
 }
 
