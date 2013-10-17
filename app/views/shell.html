@@ -4,8 +4,8 @@
 </div>
 <footer>
     <div class="row">
-        <div class="col-md-3"><a class="brand-logo" href="#"><img src="img/logo.png" /></a></div>
-        <div class="col-md-9">
+        <div class="col-md-2"><a class="brand-logo" href="#"><img src="img/logo.png" /></a></div>
+        <div class="col-md-4">
             <ul class="nav nav-application" data-bind="foreach: mainNavigation">
                 <li data-bind="css: { active: isActive }">
                     <a data-bind="attr: { href: hash }, html: title"></a>
@@ -19,6 +19,13 @@
                 </li>
             </ul>
             <!-- /ko -->
+        </div>
+        <div class="col-md-6">
+            <ul class="list-inline list-unstyled slide-navigation pull-right">
+                <li><a class="slide prev" href="#"></a></li>
+                <li>01/08</li>
+                <li><a class="slide next" href="#"></a></li>
+            </ul>
         </div>
     </div>
 </footer>

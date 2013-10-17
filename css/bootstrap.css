@@ -836,12 +836,15 @@ th.hidden-lg,td.hidden-lg{display:table-cell !important}
 @media (min-width:1200px){.hidden-lg,tr.hidden-lg,th.hidden-lg,td.hidden-lg{display:none !important}}
 .visible-print,tr.visible-print,th.visible-print,td.visible-print{display:none !important}
 @media print{.visible-print{display:block !important}tr.visible-print{display:table-row !important} th.visible-print,td.visible-print{display:table-cell !important} .hidden-print,tr.hidden-print,th.hidden-print,td.hidden-print{display:none !important}}html,body{height:100%;overflow-x:hidden}
-#wrap{min-height:100%;height:auto !important;height:100%;margin:0 auto -100px}
-#push,footer{height:100px}
-footer{margin:20px 0}footer .brand-logo{padding:15px 25px}
+#wrap{min-height:100%;height:auto !important;height:100%;margin:0 auto -110px}
+#push,footer{height:110px}
+footer{padding-top:20px}footer .brand-logo{padding:15px 27px}
 footer .nav-application{float:left !important;margin-right:25px}footer .nav-application li{display:list-item;margin-bottom:0px}footer .nav-application li a{display:inline;padding:0}footer .nav-application li a:hover{background:transparent}
 footer .nav-divider{float:left !important;margin:0 25px}
-@media (max-width:767px){#footer{margin-left:-20px;margin-right:-20px;padding-left:20px;padding-right:20px}}.content-container{font-size:35pt}
+@media (max-width:767px){#footer{margin-left:-20px;margin-right:-20px;padding-left:20px;padding-right:20px}}.slide-navigation li{vertical-align:middle}
+.slide-navigation .slide{display:inline-block;width:32px;height:54px;overflow:hidden}.slide-navigation .slide.prev{background:url('../img/prev.png') no-repeat 0 0}
+.slide-navigation .slide.next{background:url('../img/next.png') no-repeat 0 0}
+.slide-navigation .slide:hover{background-position:-32px 0}
 .backsplash{width:100%;min-height:600px;overflow-x:hidden;overflow-y:auto;animation:fadein 2s;-moz-animation:fadein 2s;-webkit-animation:fadein 2s;-o-animation:fadein 2s;background-color:#000;background-position:center center;background-size:cover;background-repeat:no-repeat;background-image:url("../img/FF_01.jpg")}.backsplash.about{background-image:url("../img/FF_01.jpg")}
 .backsplash.projects{background-image:none}
 .backsplash.details{background-image:none}

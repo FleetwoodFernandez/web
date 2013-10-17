@@ -1,4 +1,4 @@
-@footerHeight: 100px;
+@footerHeight: 110px;
 
 html,
 body {
@@ -19,14 +19,13 @@ footer {
 }
 
 footer {
-	margin: 20px 0;
+	padding: 30px 30px 0 30px;
 	.brand-logo {
-		padding: 15px 25px;
+		padding: 0;
 	}
 	.nav-application {
 	 	.pull-left;
-	 	margin-right: 25px;
-
+	 	margin: 10px 25px;
 		li {
 			display: list-item;
 			margin-bottom: 0px;
@@ -55,8 +54,27 @@ footer {
 	}
 }
 
-.content-container {
-	font-size: 35pt;
+.slide-navigation {
+	li {
+		vertical-align: middle;
+	}	
+	.slide {
+		display: inline-block;
+		width: 32px;
+		height: 54px;
+		overflow: hidden;
+		&.prev {
+			background: url('../img/prev.png') no-repeat 0 0;
+		}
+
+		&.next {
+			background: url('../img/next.png') no-repeat 0 0;
+		}
+
+		&:hover {
+			background-position: -32px 0;
+		}
+	}
 }
 
 .backsplash {
