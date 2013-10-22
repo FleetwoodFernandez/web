@@ -845,11 +845,12 @@ footer .nav-divider{float:left !important;margin:0 25px}
 .slide-navigation .slide{display:inline-block;width:32px;height:54px;overflow:hidden}.slide-navigation .slide.prev{background:url('../img/prev.png') no-repeat 0 0}
 .slide-navigation .slide.next{background:url('../img/next.png') no-repeat 0 0}
 .slide-navigation .slide:hover{background-position:-32px 0}
-.backsplash{width:100%;min-height:600px;overflow-x:hidden;overflow-y:auto;animation:fadein 2s;-moz-animation:fadein 2s;-webkit-animation:fadein 2s;-o-animation:fadein 2s;background-color:#000;background-position:center center;background-size:cover;background-repeat:no-repeat;background-image:url("../img/FF_01.jpg")}.backsplash.about{background-image:url("../img/FF_01.jpg")}
+.backsplash{width:100%;min-height:600px;overflow-x:hidden;overflow-y:auto;animation:fadein 2s;-moz-animation:fadein 2s;-webkit-animation:fadein 2s;-o-animation:fadein 2s;background-color:#fff;background-position:center center;background-size:cover;background-repeat:no-repeat;background-image:url("../img/FF_01.jpg")}.backsplash.about{background-image:url("../img/FF_01.jpg")}
 .backsplash.projects{background-image:none}
 .backsplash.details{background-image:none}
 .backsplash.contact{background-image:url("../img/FF_01.jpg")}
 .backsplash.blog{background-image:url("../img/FF_01.jpg")}
+.box-padding{margin:30px}
 .project-grid{padding:0;position:relative}.project-grid .project-details{position:absolute;display:none;color:#fff;background:#000}
 .project-grid:hover .project-details{display:block}
 .project-list{position:relative;overflow:hidden;width:4000px}.project-list .project-scoller{width:100%}
