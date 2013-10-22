@@ -12,8 +12,15 @@
                 </li>
             </ul>
             <span class="nav-divider"><img src="img/slash.png" /></span>
-            <!-- ko if: displayProjectFilters -->
-            <ul class="nav nav-application" data-bind="foreach: projectFilters">
+            <!-- ko if: getCurrentRoute() === 'projects' -->
+            <ul class="nav nav-application" data-bind="foreach: subNavigation('categories')">
+                <li data-bind="css: { active: isActive }">
+                    <a data-bind="attr: { href: hash + type }, html: title"></a>
+                </li>
+            </ul>
+            <!-- /ko -->
+            <!-- ko if: getCurrentRoute() === 'about' -->
+            <ul class="nav nav-application" data-bind="foreach: subNavigation('about')">
                 <li data-bind="css: { active: isActive }">
                     <a data-bind="attr: { href: hash + type }, html: title"></a>
                 </li>

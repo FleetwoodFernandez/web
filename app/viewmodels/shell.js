@@ -6,11 +6,20 @@
                 return route.type === undefined;
             });
         }),
-        projectFilters: ko.computed(function() {
+        subNavigation: function(filter) {
             return ko.utils.arrayFilter(router.navigationModel(), function(route) {
-                return route.type !== undefined;
+                return route.type === filter;
             });
-        }),
+        },
+        getCurrentRoute: function() {
+            var route = router.activeItem() ? router.activeItem().__moduleId__ : null;
+            if(route) {
+                route = route.split("/")[1];
+            } else {
+                route = null;
+            }
+            return route;
+        },
         displayProjectFilters: ko.computed(function(){
             var route = router.activeItem() ? router.activeItem().__moduleId__ : null;
             return route && (route === 'viewmodels/projects' || route === 'viewmodels/details');
@@ -41,22 +50,21 @@
             var routes = [[
                     { route: '', moduleId: 'viewmodels/home' },
                     { route: 'projects(/:type)', hash:'#projects', title: 'PROJECTS', moduleId: 'viewmodels/projects', nav: true },
-                    { route: 'about', title: 'ABOUT', moduleId: 'viewmodels/about', nav: true },
+                    { route: 'about(/:type)', hash:'#about', title: 'ABOUT', moduleId: 'viewmodels/about', nav: true },
                     { route: 'blog', title: 'BLOG', moduleId: 'viewmodels/blog', nav: true },
                     { route: 'contact', title: 'CONTACT', moduleId: 'viewmodels/contact', nav: true },
-                    { route: 'details/:id(/:slideid)', moduleId: 'viewmodels/details' }
+                    { route: 'details/:id(/:slideid)', moduleId: 'viewmodels/details' },
                     //get types from data file
-                    //{ route: 'projects/', title: 'RESIDENTIAL', moduleId: 'viewmodels/projects', type: 'residential', nav: true },
-                    //{ route: 'projects/', title: 'COMMERCIAL', moduleId: 'viewmodels/projects', type: 'commercial', nav: true },
-                    //{ route: 'projects/', title: 'INTERIORS', moduleId: 'viewmodels/projects', type: 'interiors', nav: true },
-                    //{ route: 'projects/', title: 'OTHER', moduleId: 'viewmodels/projects', type: 'other', nav: true }
+                    { route: 'about/', title: 'HUNTER FLEETWOOD', moduleId: 'viewmodels/projects', type: 'about', nav: true },
+                    { route: 'about/', title: 'MARIAPAZ FERNANDEZ', moduleId: 'viewmodels/projects', type: 'about', nav: true },
+                    { route: 'about/', title: 'PROCESS', moduleId: 'viewmodels/projects', type: 'about', nav: true }
                 ]],
                 categories = [];
 
             $.each(dataservice.categories, function(){
                 var cat = this,
                     name = cat.name.toString();
-                categories.push({ route: 'projects/', title: name.toString().toUpperCase(), moduleId: 'viewmodels/projects', type: name, nav: true })
+                categories.push({ route: 'projects/', title: name.toString().toUpperCase(), moduleId: 'viewmodels/projects', type: "categories", nav: true })
             });
 
             routes = routes.concat(categories);
