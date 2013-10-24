@@ -44,7 +44,7 @@
                     css = 'blog';
                     break;
             }
-            return 'wrap backsplash ' + css;
+            return 'backsplash ' + css;
         }),
         activate: function () {
             var routes = [[
@@ -54,7 +54,6 @@
                     { route: 'blog', title: 'BLOG', moduleId: 'viewmodels/blog', nav: true },
                     { route: 'contact', title: 'CONTACT', moduleId: 'viewmodels/contact', nav: true },
                     { route: 'details/:id(/:slideid)', moduleId: 'viewmodels/details' },
-                    //get types from data file
                     { route: 'about/fleetwood', title: 'HUNTER FLEETWOOD', moduleId: 'viewmodels/fleetwood', settings: { type: 'about', id: 'fleetwood' }, nav: true },
                     { route: 'about/fernandez', title: 'MARIAPAZ FERNANDEZ', moduleId: 'viewmodels/fernandez', settings: { type: 'about', id: 'fernandez' }, nav: true },
                     { route: 'about/process', title: 'PROCESS', moduleId: 'viewmodels/process', settings: { type: 'about', id: 'process' }, nav: true }
