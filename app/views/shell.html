@@ -13,14 +13,14 @@
                 </li>
             </ul>
             <span class="nav-divider"><img src="img/slash.png" /></span>
-            <!-- ko if: displayProjectFilters -->
+            <!-- ko if: route() === 'projects' || route() === 'details' -->
             <ul class="nav nav-application" data-bind="foreach: subNavigation('categories')">
                 <li data-bind="css: { active: isActive }">
                     <a data-bind="attr: { href: hash + settings.id }, html: title"></a>
                 </li>
             </ul>
             <!-- /ko -->
-            <!-- ko if: getCurrentRoute() === 'about' -->
+            <!-- ko if: route() === 'about' -->
             <ul class="nav nav-application" data-bind="foreach: subNavigation('about')">
                 <li data-bind="css: { active: isActive }">
                     <a data-bind="attr: { href: hash }, html: title"></a>
@@ -29,7 +29,7 @@
             <!-- /ko -->
         </div>
         <div class="col-md-6">
-            <!-- ko if: displayProjectFilters -->
+            <!-- ko if: route() === 'details' -->
             <ul class="list-inline list-unstyled slide-navigation pull-right">
                 <li><a class="slide prev" href="#"></a></li>
                 <li>01/08</li>

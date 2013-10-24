@@ -853,5 +853,5 @@ footer .nav-divider{float:left !important;margin:0 25px}
 .box-padding{margin:30px}
 .project-grid{padding:0;position:relative}.project-grid .project-details{position:absolute;display:none;color:#fff;background:#000}
 .project-grid:hover .project-details{display:block}
-.project-list{position:relative;overflow:hidden;width:4000px}.project-list .project-scoller{width:100%}
-.project-list .project-slide{margin:0;padding:0;display:inline-block;height:100%}.project-list .project-slide img{width:auto;height:100%}
+.project-list{position:relative;overflow:hidden;width:4000px}.project-list .project-scoller{width:100%;overflow:hidden}
+.project-list .project-slide{margin:0;padding:0;float:left;width:auto;height:100%}.project-list .project-slide img{width:auto;height:100%}
