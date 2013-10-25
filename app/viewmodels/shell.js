@@ -12,6 +12,7 @@
             model.route(model.fragment().split("/")[0]);
             if(model.route() === 'details') {
                 model.project(dataservice.getProjectByID(route.params[0]));
+                model.projectSlide(0);
             } else {
                 model.project(null);
             }
