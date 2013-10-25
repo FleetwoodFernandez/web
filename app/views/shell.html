@@ -19,6 +19,7 @@
                     <a data-bind="attr: { href: hash + settings.id }, html: title"></a>
                 </li>
             </ul>
+            <span class="nav-divider"><img src="img/slash.png" /></span>
             <!-- /ko -->
             <!-- ko if: route() === 'about' -->
             <ul class="nav nav-application" data-bind="foreach: subNavigation('about')">
@@ -28,12 +29,18 @@
             </ul>
             <!-- /ko -->
         </div>
-        <div class="col-md-6">
-            <!-- ko if: route() === 'details' -->
+        <div class="col-md-4">
+            <!-- ko if: project() -->
+                <h3 data-bind="text: project().name"></h3>
+                <a data-bind="attr: { href: projectInfo() }">PROJECT INFO</a>
+            <!-- /ko -->
+        </div>
+        <div class="col-md-2">
+            <!-- ko if: project() && route() === 'details' -->
             <ul class="list-inline list-unstyled slide-navigation pull-right">
-                <li><a class="slide prev" href="#"></a></li>
+                <li><span class="slide prev" data-bind="click: previous"></span></li>
                 <li>01/<!-- ko text: project().assets.length --><!-- /ko --></li>
-                <li><a class="slide next" href="#"></a></li>
+                <li><span class="slide next" data-bind="click: next"></span></li>
             </ul>
             <!-- /ko -->
         </div>

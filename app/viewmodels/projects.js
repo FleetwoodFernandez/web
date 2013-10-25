@@ -3,8 +3,8 @@
     	var self = this;
         self.displayName = 'Projects';
 		self.categories = dataservice.categories;
-		self.projectURL = function(id) {
-			return '#details/' + id;
+		self.projectURL = function(alias) {
+			return '#details/' + alias + "/0";
 		};
 		self.allProjects = dataservice.projects;
         self.filter = ko.observable("all");

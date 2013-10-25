@@ -58,7 +58,7 @@ footer {
 
 	.nav-divider {
 		.pull-left;
-		margin: 0 25px;
+		margin: 0 20px;
 	}
 }
 
@@ -76,6 +76,7 @@ footer {
 		vertical-align: middle;
 	}	
 	.slide {
+		cursor: pointer;
 		display: inline-block;
 		width: 32px;
 		height: 54px;
@@ -169,6 +170,54 @@ footer {
 }
 
 .project-list {
+	overflow: hidden;
+	ul {
+		white-space: nowrap;
+		font-size: 0;
+		display: block;
+		margin: 0;
+		padding: 0;
+
+		li {
+			display: inline-block;
+			width: auto;
+			height: 100%;
+			
+			img {
+				width: auto;
+				height: 100%;
+			}
+		}
+	}
+}
+
+.project-info {
+	position: fixed;
+	top: 0px;
+	bottom: @footerHeight;
+	left: 0px;
+	right: 0px;
+	background: rgba(255,255,255,0.7);
+	filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr=#b2ffffff, endColorstr=#b2ffffff)")); // IE9 and down
+	zoom: 1;
+	//margin-bottom: @footerHeight;
+
+	.close-info {
+		cursor: pointer;
+		margin: 30px;
+		display: block;
+		width: 54px;
+		height: 54px;
+		overflow: hidden;	
+		background: url('../img/close.png') no-repeat 0 0;
+		
+		&:hover {
+			background-position: -54px 0;			
+		}
+	}
+}
+
+/*.project-list {
 	position: relative;
 	overflow: hidden;
 	width: 4000px;
@@ -190,4 +239,9 @@ footer {
 			height: 100%;
 		}
 	}
+}*/
+
+.img-responsive-height {
+	height: 100%;
+	width: auto;
 }
