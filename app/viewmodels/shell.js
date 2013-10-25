@@ -2,10 +2,12 @@
     var model = {};
     model.router = router;
     model.route = ko.observable();
+    model.project = ko.observable();
     model.activeItem = ko.computed(function(){
-        var route = router.activeInstruction() ? router.activeInstruction().fragment : null;
+        var route = router.activeInstruction() ? router.activeInstruction() : null;
         if(route) {
-            model.route(route.split("/")[0]);
+            model.route(route.fragment.split("/")[0]);
+            model.project(dataservice.getProjectByID(route.params[0]));
         }
         // fragment: "details/0"
         // params: Array[2]
@@ -26,19 +28,19 @@
     model.getBackground = ko.computed(function(){
         var css = '';
         switch(model.route()) {
-            case 'viewmodels/projects':
+            case 'projects':
                 css = 'projects';
                 break;
-            case 'viewmodels/details':
+            case 'details':
                 css = 'details';
                 break;
-            case 'viewmodels/about':
+            case 'about':
                 css = 'about';
                 break;
-            case 'viewmodels/contact':
+            case 'contact':
                 css = 'contact';
                 break;
-            case 'viewmodels/blog':
+            case 'blog':
                 css = 'blog';
                 break;
         }

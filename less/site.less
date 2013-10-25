@@ -114,6 +114,7 @@ footer {
 
 	&.projects {
 		background-image: none;
+		background-color: #000;
 	}
 
 	&.details {
@@ -135,17 +136,34 @@ footer {
 
 .project-grid {
 	padding: 0;
+	overflow: hidden;
+	display: inline-block;
+	background: #000;
 	position: relative;
 
 	.project-details {
 		position: absolute;
-		display: none;
+		left: 30px;
+		bottom: 30px;
 		color: #fff;
+		font-size: 24pt;
+		display: none;
+	}
+
+	.thumb {
+		.opacity(1);
+		transition: opacity .25s ease-in-out;
+	   -moz-transition: opacity .25s ease-in-out;
+	   -webkit-transition: opacity .25s ease-in-out;
 	}
 
 	&:hover {
 		.project-details {
 			display: block;
+		}
+
+		.thumb {
+			.opacity(.3);
 		}
 	}
 }

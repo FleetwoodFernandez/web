@@ -32,7 +32,7 @@
             <!-- ko if: route() === 'details' -->
             <ul class="list-inline list-unstyled slide-navigation pull-right">
                 <li><a class="slide prev" href="#"></a></li>
-                <li>01/08</li>
+                <li>01/<!-- ko text: project().assets.length --><!-- /ko --></li>
                 <li><a class="slide next" href="#"></a></li>
             </ul>
             <!-- /ko -->
