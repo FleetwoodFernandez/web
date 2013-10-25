@@ -1,4 +1,4 @@
-﻿define(['plugins/router', 'knockout', 'dataservice'], function(router, ko, dataservice) {
+﻿define(['durandal/app', 'knockout', 'dataservice'], function(app, ko, dataservice) {
 	var ctor = function () {
     	var self = this;
     	self.project = ko.observable();
@@ -8,8 +8,6 @@
         self.activate = function(id, slideid, info) {
         	self.project(dataservice.getProjectByID(id));
         	self.slideid(slideid);
-            self.displayInfo(info !== null);
-            console.log(self.displayInfo())
         };
         self.changeSlide = function(elm) {
             console.log(elm)
@@ -17,6 +15,13 @@
         self.closeInfo = function() {
             self.displayInfo(false);
         };
+        app.on('details:info').then(function(e){
+            self.displayInfo(e);
+            console.log(e)
+        });
+        app.on('details:slide').then(function(id){
+            self.slideid(id);
+        });
     };
     return ctor;
 });

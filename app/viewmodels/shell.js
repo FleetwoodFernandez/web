@@ -1,4 +1,4 @@
-﻿define(['plugins/router', 'durandal/app', 'knockout', 'dataservice', 'module', 'knockout'], function (router, app, ko, dataservice, module, ko) {
+﻿define(['plugins/router', 'durandal/app', 'durandal/system', 'knockout', 'dataservice', 'module', 'knockout'], function (router, app, system, ko, dataservice, module, ko) {
     var model = {};
     model.router = router;
     model.route = ko.observable();
@@ -17,11 +17,9 @@
             }
         }
     });
-    model.projectInfo = ko.computed(function() {
-        if(model.project()) {
-            return '#' + model.fragment() + "/" + "info";
-        }
-    });
+    model.projectInfo = function() {
+        app.trigger('details:info', true);
+    };
     model.mainNavigation = ko.computed(function() {
         return ko.utils.arrayFilter(router.navigationModel(), function(route) {
             return route.settings === undefined;
@@ -35,12 +33,12 @@
     model.previous = function() {
         var i = Math.max(0, model.projectSlide() - 1);
         model.projectSlide(i);
-        console.log(i);
+        app.trigger('details:slide', model.projectSlide());
     };
     model.next = function() {
         var i = Math.min(model.projectSlide() + 1, model.project().assets.length - 1);
         model.projectSlide(i);
-        console.log(i)
+        app.trigger('details:slide', model.projectSlide());
     };
     model.activate = function () {
         var routes = [[
@@ -49,7 +47,7 @@
                 { route: 'about', hash:'#about', title: 'ABOUT', moduleId: 'viewmodels/about', nav: true },
                 { route: 'blog', title: 'BLOG', moduleId: 'viewmodels/blog', nav: true },
                 { route: 'contact', title: 'CONTACT', moduleId: 'viewmodels/contact', nav: true },
-                { route: 'details/:id/:slideid(/:info)', moduleId: 'viewmodels/details' },
+                { route: 'details/:id/:slideid', moduleId: 'viewmodels/details' },
                 { route: 'about/fleetwood', title: 'HUNTER FLEETWOOD', moduleId: 'viewmodels/fleetwood', settings: { type: 'about', id: 'fleetwood' }, nav: true },
                 { route: 'about/fernandez', title: 'MARIAPAZ FERNANDEZ', moduleId: 'viewmodels/fernandez', settings: { type: 'about', id: 'fernandez' }, nav: true },
                 { route: 'about/process', title: 'PROCESS', moduleId: 'viewmodels/process', settings: { type: 'about', id: 'process' }, nav: true }
