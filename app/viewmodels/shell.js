@@ -31,6 +31,12 @@
             return route.settings ? route.settings.type === filter : null;
         });
     };
+    model.formatSlideNumber = function(id) {
+        if(id.toString().length < 2) {
+            return "0" + id;
+        }
+        return id;
+    };
     model.previous = function() {
         var i = Math.max(0, model.projectSlide() - 1);
         model.projectSlide(i);
