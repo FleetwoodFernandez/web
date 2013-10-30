@@ -8,11 +8,11 @@
 	<div class="col-md-6">
 		<section class="box-padding">
 		    <h2><!-- ko text: project().name --><!-- /ko --></h2>
-		    <h4><!-- ko text: project().location --><!-- /ko --></h4>
-		    <span data-bind="html: project().description"></span>
+		    <div class="project-label"><!-- ko text: project().location --><!-- /ko --></div>
+		    <span class="project-description" data-bind="html: project().description"></span>
 		</section>
 		<section class="box-padding" data-bind="with: project().recipe">
-			<h4>PROJECT RECIPE</h4>
+			<div class="recipe-label">PROJECT RECIPE</div>
 			<a data-bind="attr: { href: path }"><!-- ko text: name --><!-- /ko --></a>
 		</section>
 	</div>
