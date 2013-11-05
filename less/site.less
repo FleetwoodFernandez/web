@@ -4,12 +4,14 @@
 html,
 body {
 	width: 100%;
+	min-width: 1000px;
 	height: 100%;
 	overflow: hidden;
 	font-weight: 300;
 }
 
-// Firefox set height hack
+// IE/Firefox set height hack
+// This is needed because max-height in child elements will exceed parent height if no height is specied for all parents.
 .durandal-wrapper,
 #content-container,
 #container,
@@ -23,7 +25,7 @@ a {
 }
 
 #applicationHost {
-  min-height: 100%;
+  min-width: 1000px;
   width: 100%;
   height: auto !important;
   height: 100%;
@@ -221,7 +223,7 @@ footer {
 			display: inline;
 			img {
 				display: inline-block;
-				object-fit: cover;
+				vertical-align: baseline;
 			}
 		}
 	}
