@@ -16,7 +16,14 @@ body {
 #content-container,
 #container,
 .project-list,
-.project-list ul { 
+.project-list ul,
+#container .row,
+#container .row div { 
+	height: 100%;
+}
+
+#container .row div a {
+	display: block;
 	height: 100%;
 }
 
@@ -223,9 +230,15 @@ footer {
 			display: inline;
 			img {
 				display: inline-block;
-				vertical-align: baseline;
+				vertical-align: middle;
 			}
 		}
+	}
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	.project-list ul li img {
+		vertical-align: baseline;
 	}
 }
 
