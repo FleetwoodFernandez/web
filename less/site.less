@@ -46,7 +46,7 @@ a {
 
 #wrap {
 	padding: 0px;
-	position: fixed;
+	position: absolute;
 	top: 0px;
 	bottom: @footerHeight;
 	left: 0px;
@@ -66,7 +66,7 @@ a {
 }
 
 footer {
-	position: fixed;
+	position: absolute;
 	bottom: 0px;
 	min-width: 1000px !important;
 	width: 100%;
@@ -157,7 +157,7 @@ footer {
 }
 
 .backsplash {
-	background-image: url("../img/1.jpg");
+	background-image: none;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -209,7 +209,7 @@ footer {
 	.project-details {
 		position: absolute;
 		left: 20px;
-		bottom: 20px;
+		top: 50%;
 		color: #fff;
 		font-size: 24px;
 		display: none;
@@ -217,9 +217,6 @@ footer {
 
 	.thumb {
 		.opacity(1);
-		//transition: opacity .25s;
-		//-moz-transition: opacity .25s;
-		//-webkit-transition: opacity .25s;
 	}
 
 	&:hover {
@@ -250,15 +247,8 @@ footer {
 			background-position: center center;
 			img {
 				display: inline-block;
-				vertical-align: middle;
 			}
 		}
-	}
-}
-
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-	.project-list ul li img {
-		//vertical-align: baseline;
 	}
 }
 
@@ -322,6 +312,44 @@ footer {
 	}
 }
 
+.profile-link {
+	color: #000;
+	text-decoration: underline;
+	font-size: 12px;
+
+	&:hover {
+		color: #666;
+	}
+
+	&.recipe-link {
+		display: block;
+		text-transform: uppercase;
+		margin-top: -8px;
+	}
+}
+
+.process-list {
+	overflow: hidden;
+	ul {
+		white-space: nowrap;
+		display: block;
+		margin: 0;
+		padding: 0;
+
+		li {
+			display: inline;
+			img {
+				display: inline-block;
+				vertical-align: top;
+			}
+			.text-container {
+				display: inline-block;
+				white-space: normal;
+			}
+		}
+	}
+}
+
 .img-responsive-height {
 	max-height: 100%;
 	width: auto;
@@ -335,9 +363,6 @@ footer {
     list-style: none;
     width: 100%;
     height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
     z-index: -1;
     padding: 0;
     margin: 0;
