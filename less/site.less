@@ -1,9 +1,10 @@
+@minWidth: 1200px;
 @footerHeight: 100px;
 @footerPadding: 20px;
 
 html,
 body {
-	min-width: 1000px;
+	min-width: @minWidth;
 	width: auto !important;
 	width: 100%;
 	height: 100%;
@@ -32,7 +33,7 @@ a {
 }
 
 #applicationHost {
-	min-width: 1000px !important;
+	min-width: @minWidth !important;
 	width: auto !important;
 	width: 100%;
 	height: auto !important;
@@ -51,12 +52,12 @@ a {
 	bottom: @footerHeight;
 	left: 0px;
 	right: 0px;
-	min-width: 1000px;
+	min-width: @minWidth;
 	width: auto !important;
 	width: 100%;
 	overflow: hidden;
 	#content-container {
-		min-width: 1000px;
+		min-width: @minWidth;
 		width: auto !important;
 		width: 100%;
 		margin-bottom: @footerHeight;
@@ -68,12 +69,12 @@ a {
 footer {
 	position: absolute;
 	bottom: 0px;
-	min-width: 1000px !important;
+	min-width: @minWidth !important;
 	width: 100%;
   	height: @footerHeight;
 	padding: 20px;
 	.row {
-		min-width: 1000px !important;
+		min-width: @minWidth !important;
 		width: 100%;
 	}
 	.brand-logo {
