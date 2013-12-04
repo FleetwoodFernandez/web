@@ -1,4 +1,5 @@
 @minWidth: 1200px;
+@minHeight: 600px;
 @footerHeight: 100px;
 @footerPadding: 20px;
 
@@ -29,7 +30,12 @@ body {
 }
 
 a {
-	outline: 0;
+	outline: none;
+	-moz-outline-style: none;
+	&:focus {
+		outline: none;
+		-moz-outline-style: none;
+	}
 }
 
 #applicationHost {
