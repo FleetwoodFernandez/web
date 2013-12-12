@@ -64,14 +64,13 @@ a {
 	min-width: @minWidth;
 	width: auto !important;
 	width: 100%;
-	overflow: hidden;
+	overflow-x: hidden;
+	overflow-y: auto;
 	#content-container {
 		min-width: @minWidth;
 		width: auto !important;
 		width: 100%;
-		margin-bottom: @footerHeight;
-		overflow-x: hidden;
-		overflow-y: auto;
+		//margin-bottom: @footerHeight;
 	}
 }
 
@@ -83,7 +82,8 @@ a {
   	height: @footerHeight;
 	padding: 20px;
 	.row {
-		min-width: @minWidth !important;
+		min-width: @minWidth;
+		width: auto !important;
 		width: 100%;
 	}
 	.brand-logo {
@@ -130,20 +130,6 @@ a {
 	}
 }
 
-@media only screen {
-	.touch #wrap {
-		position: static;
-
-		#content-container {
-			margin-bottom: 0;
-		}
-	}
-
-	.touch #footer {
-		position: static;
-	}
-}
-
 @media (max-width: 1200px) {
 	#wrap {
 		position: static;
@@ -187,6 +173,10 @@ a {
 		vertical-align: middle;
 		padding: 0 0 0 18px;
 		font-size: 12px;
+
+		&.number {
+			width: 48px;
+		}
 	}	
 	.slide {
 		cursor: pointer;
@@ -450,6 +440,10 @@ a {
 	width: 25%; /* Fallback */
 	width: -webkit-calc(100% / 4);
 	width: calc(100% / 4);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-position: center center;
 }
 
 .cbp-rfgrid li a,
@@ -462,6 +456,7 @@ a {
 .cbp-rfgrid li a img {
 	max-width: 100%;
 	vertical-align: baseline;
+	.opacity(0);
 }
 
 /* Flexbox is used for centering the heading */
@@ -497,19 +492,11 @@ a {
 
 /* Example for media query: change number of items per row */
 
-@media screen and (max-width: 1750px) {
+@media screen and (max-width: 1500px) {
 	.cbp-rfgrid li {
 		width: 25%; /* Fallback */
 		width: -webkit-calc(100% / 4);
 		width: calc(100% / 4);
-	}
-}
-
-@media screen and (max-width: 1500px) {
-	.cbp-rfgrid li {
-		width: 33.3333333%; /* Fallback */
-		width: -webkit-calc(100% / 3);
-		width: calc(100% / 3);
 	}
 }
 

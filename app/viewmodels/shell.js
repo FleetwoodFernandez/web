@@ -13,10 +13,10 @@
     composition.addBindingHandler('fadeImageLoader', {
         init: function(element, valueAccessor) {
             $(".project-list ul li").imagesLoaded(function() {
-                 console.log(this)
+                 //console.log(this)
             });
         }
-    })
+    });
     var model = {};
     model.router = router;
     model.route = ko.observable();
