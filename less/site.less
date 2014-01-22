@@ -1,13 +1,15 @@
 @minWidth: 1200px;
-@minHeight: 600px;
+@minHeight: 700px;
 @footerHeight: 100px;
 @footerPadding: 20px;
 
 html,
 body {
 	min-width: @minWidth;
-	width: auto !important;
+	min-height: @minHeight;
+	//width: auto !important;
 	width: 100%;
+	//height: auto !important;
 	height: 100%;
 	font-weight: 300;
 }
@@ -15,20 +17,24 @@ body {
 // IE/Firefox set height hack
 // This is needed because max-height in child elements will exceed parent height if no height is specied for all parents.
 .durandal-wrapper,
-#content-container,
-#container,
 .project-list,
 .project-list ul,
-#container .row,
-#container .row div { 
+#wrap .row,
+#wrap .row div { 
 	height: 100%;
+}
+
+.durandal-wrapper,
+.project-list,
+.project-list ul { 
+	width: 100%;
 }
 
 .col-crop {
 	overflow: hidden;
 }
 
-#content-container a.contact-map {
+#wrap a.contact-map {
 	display: block;
 	height: 100%;
 }
@@ -43,43 +49,35 @@ a {
 }
 
 #applicationHost {
-	min-width: @minWidth !important;
-	width: auto !important;
+	//width: auto !important;
 	width: 100%;
-	height: auto !important;
+	//height: auto !important;
 	height: 100%;
-}
-
-#content-container {
-	min-height: 600px;
+	position: relative;
 }
 
 #wrap {
 	padding: 0px;
-	position: absolute;
-	top: 0px;
-	bottom: @footerHeight;
-	left: 0px;
-	right: 0px;
 	min-width: @minWidth;
-	width: auto !important;
+	//width: auto !important;
 	width: 100%;
+	//height: auto !important;
+	height: 100%;
+	padding-top: @footerHeight;
 	overflow-x: hidden;
 	overflow-y: auto;
-	#content-container {
-		min-width: @minWidth;
-		width: auto !important;
-		width: 100%;
-		//margin-bottom: @footerHeight;
-	}
+	position: absolute;
+	top: 0;
+	.box-sizing(100%);
 }
 
 #footer {
 	position: absolute;
-	bottom: 0px;
-	min-width: @minWidth !important;
+	top: 0;
+	left: 0;
 	width: 100%;
   	height: @footerHeight;
+  	background: #fff;
 	.row {
 		min-width: @minWidth;
 		width: auto !important;
@@ -109,6 +107,7 @@ a {
 			&.active {
 				a {
 					color: @link-hover-color;
+					background: #fff;
 				}
 			}
 		}
@@ -127,34 +126,6 @@ a {
 			margin-top: 8px;
 			margin-bottom: 1px;
 		}
-	}
-}
-
-@media (max-width: 1200px) {
-	#wrap {
-		position: static;
-
-		#content-container {
-			margin-bottom: 0;
-		}
-	}
-
-	#footer {
-		position: static;
-	}
-}
-
-@media (max-height: 600px) {
-	#wrap {
-		position: static;
-
-		#content-container {
-			margin-bottom: 0;
-		}
-	}
-
-	#footer {
-		position: static;
 	}
 }
 
@@ -234,7 +205,7 @@ a {
 }
 
 .box-padding {
-	margin: 30px;
+	margin: 24px;
 }
 
 .text-container {
@@ -265,10 +236,10 @@ a {
 
 .project-info {
 	position: fixed;
-	top: 0px;
-	bottom: @footerHeight;
-	left: 0px;
-	right: 0px;
+	top: @footerHeight;
+	bottom: 0;
+	left: 0;
+	right: 0;
 	background: rgba(255,255,255,0.8);
 	filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr=#ccffffff, endColorstr=#ccffffff)")); // IE9 and down
 	zoom: 1;
@@ -276,7 +247,7 @@ a {
 
 	.close-info {
 		cursor: pointer;
-		margin: 20px 5px;
+		margin: 25px;
 		display: block;
 		width: 42px;
 		height: 43px;
@@ -300,12 +271,6 @@ a {
 		&:hover {
 			color: #666;
 		}
-
-		&.recipe-link {
-			display: block;
-			text-transform: uppercase;
-			margin-top: -8px;
-		}
 	}
 
 	.project-description {
@@ -316,10 +281,6 @@ a {
 		margin-top: -3px;
 		margin-bottom: 30px;
 		text-transform: uppercase;
-	}
-
-	.recipe-label {
-		font-size: 12px;
 	}
 }
 
@@ -341,18 +302,20 @@ a {
 
 .process-list {
 	overflow: hidden;
+	height: 100%;
 	ul {
 		white-space: nowrap;
 		display: block;
 		margin: 0;
 		padding: 0;
+		height: 100%;
 
 		li {
 			display: inline;
-			img {
-				display: inline-block;
-				vertical-align: top;
-			}
+            img {
+                    display: inline-block;
+                    vertical-align: top;
+            }
 			.text-container {
 				display: inline-block;
 				white-space: normal;
@@ -368,6 +331,7 @@ a {
 .img-responsive-height {
 	max-height: 100%;
 	width: auto;
+	vertical-align: top;
 }
 
 .cursor-pointer {
@@ -378,17 +342,17 @@ a {
     list-style: none;
     width: 100%;
     height: 100%;
-    min-height: @minHeight;
     z-index: -1;
     padding: 0;
     margin: 0;
+    position: relative;
+    overflow: hidden;
 }
  
 .cbp-bislideshow li {
     position: absolute;
     width: 101%;
     height: 101%;
-    min-height: @minHeight;
     top: -0.5%;
     left: -0.5%;
     opacity: 0;
