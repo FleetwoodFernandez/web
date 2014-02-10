@@ -168,7 +168,7 @@ define(function(require){
 			alias: "Peninsula",
 			name: "Peninsula Pacific",
 			location: "LOS ANGELES, CA",
-			description: "<p>The design of this executive office suite blends the bright spirit of the Southern California coast, where the CEO of the company resides, and the robust character of a Sun Valley horse ranch, his second home. Combined, the space also represents the entertainment holding company’s philosophy of relaxed hospitality. White lacquered walls balance the dark reclaimed oak plank flooring. Deep indigo lacquer panels wrap into the boardroom, and clear glass partitions allow uninterrupted views of Century City’s skyline.</p><p>Fleetwood/Fernandez custom designed most of the furnishings using a palette of noble materials: solid walnut, oiled bronze, and marble.</p>",
+			description: "<p>The design of this executive office suite blends the bright spirit of the Southern California coast, where the CEO of the company resides, and the robust character of a Sun Valley horse ranch, his second home. Combined, the space also represents the entertainment holding company’s philosophy of relaxed hospitality. White lacquered walls balance the dark reclaimed oak plank flooring. Deep indigo lacquer panels wrap into the boardroom, and clear glass partitions allow uninterrupted views of Century City’s skyline. Fleetwood/Fernandez custom designed most of the furnishings using a palette of noble materials: solid walnut, oiled bronze, and marble.</p>",
 			thumbnail: "img/projects/peninsula/Peninsula_thumb.jpg",
 			categories: ["interiors"],
 			assets: [
@@ -437,7 +437,7 @@ define(function(require){
 			alias: "1735Studio",
 			name: "1735 Studio",
 			location: "SANTA MONICA, CA",
-			description: "<p>Our studio is a home away from home for us and our staff. Housed in an old button factory turned artist’s studio turned creative office, the space features operable 11’ steel windows and even higher bow and truss ceilings. To complement the industrial character of the space we made desks and cabinets out of plywood, adding a laser cut custom perforation pattern to some feature pieces. Brightly painted standard steel shelving provides additional storage, and colorful rugs and textiles on the pinup walls soften the space.</p><p>Our own collection of vintage furniture coexists with more contemporary pieces and with the rotating finds, loaners and mockups for our projects.</p>",
+			description: "<p>Our studio is a home away from home for us and our staff. Housed in an old button factory turned artist’s studio turned creative office, the space features operable 11’ steel windows and even higher bowstring truss ceilings. To complement the industrial character of the space we made desks and cabinets out of plywood, adding a laser cut custom perforation pattern to some feature pieces. Brightly painted standard steel shelving provides additional storage, and colorful rugs and textiles on the pinup walls soften the space. Our own collection of vintage furniture coexists with more contemporary pieces and with the rotating finds, loaners and mockups for our projects.</p>",
 			thumbnail: "img/projects/1735_studio/1735_thumbnail.jpg",
 			categories: ["interiors"],
 			assets: [
@@ -471,7 +471,7 @@ define(function(require){
 			alias: "mashouse",
 			name: "MAS House",
 			location: "LOS ANGELES, CA",
-			description: "<p></p>",
+			description: "<p>In Construction, more information and images coming soon.</p>",
 			thumbnail: "img/projects/mas_house/MAS_thumbnail.jpg",
 			categories: ["residential"],
 			assets: [
