@@ -382,7 +382,7 @@ define(function(require){
 					path: "img/projects/sol_loft/SOL_04.jpg"
 				},
 				{
-					path: "img/projects/sol_loft/SOL_06.jpg"
+					path: "img/projects/sol_loft/SOL_05.jpg"
 				}
 			]
 		},
