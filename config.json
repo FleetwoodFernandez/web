@@ -1,0 +1,16 @@
+{
+	"name": "FleetwoodFernandez",
+	"server": {
+		"port": "8080"
+	},
+	"release": {
+		"images": "./build/images/",
+		"scripts": "./build/js/",
+		"styles": "./build/css/"
+	},
+	"dev": {
+		"images": "./img/",
+		"less": "./less/",
+		"styles": "./css/"
+	}
+}

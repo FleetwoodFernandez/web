@@ -14,19 +14,27 @@ body {
 	font-weight: 300;
 }
 
+body {
+    background-image: url('/img/5.jpg');
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+}
+
 // IE/Firefox set height hack
 // This is needed because max-height in child elements will exceed parent height if no height is specied for all parents.
 .durandal-wrapper,
 .project-list,
 .project-list ul,
 #wrap .row,
-#wrap .row div { 
+#wrap .row div {
 	height: 100%;
 }
 
 .durandal-wrapper,
 .project-list,
-.project-list ul { 
+.project-list ul {
 	width: 100%;
 }
 
@@ -149,7 +157,7 @@ a {
 			width: 48px;
 			margin-top: -4px;
 		}
-	}	
+	}
 	.slide {
 		cursor: pointer;
 		display: inline-block;
@@ -260,11 +268,11 @@ a {
 		display: block;
 		width: 42px;
 		height: 43px;
-		overflow: hidden;	
+		overflow: hidden;
 		background: url('../img/close.png') no-repeat -42px 0;
-		
+
 		&:hover {
-			background-position: 0 0;			
+			background-position: 0 0;
 		}
 	}
 
@@ -337,6 +345,11 @@ a {
 	}
 }
 
+#wrap .row,
+.process-list {
+    background-color: #fff;
+}
+
 .img-responsive-height {
 	max-height: 100%;
 	width: auto;
@@ -357,7 +370,7 @@ a {
     position: relative;
     overflow: hidden;
 }
- 
+
 .cbp-bislideshow li {
     position: absolute;
     width: 101%;
@@ -376,23 +389,23 @@ a {
     background-size: cover;
     background-position: center center;
 }
- 
+
 /* ...and hide the images */
 .backgroundsize .cbp-bislideshow li img {
     display: none;
 }
- 
+
 .cbp-bislideshow li img {
     display: block;
     width: 100%;
 }
 
 /* Fallback */
- 
+
 .no-js.no-backgroundsize .cbp-bislideshow li:first-child {
     opacity: 1;
 }
- 
+
 .no-js.backgroundsize .cbp-bislideshow li:first-child img {
     display: block;
 }

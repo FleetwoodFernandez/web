@@ -163,5 +163,10 @@
     app.on('process:next').then(function(id) {
         model.nextProcess();
     });
+    setTimeout(function() {
+        $('body').css({
+            'background-image': 'none'
+        });
+    }, 1500);
     return model;
 });
