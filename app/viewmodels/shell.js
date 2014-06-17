@@ -167,6 +167,6 @@
         $('body').css({
             'background-image': 'none'
         });
-    }, 1500);
+    }, 3000);
     return model;
 });
