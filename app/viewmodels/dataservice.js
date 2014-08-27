@@ -47,6 +47,36 @@ define(function(require){
 				},
 				{
 					path: "img/projects/tat_house/TAT_07.jpg"
+				},
+				{
+					path: "img/projects/tat_house/TAT_08.jpg"
+				},
+				{
+					path: "img/projects/tat_house/TAT_09.jpg"
+				},
+				{
+					path: "img/projects/tat_house/TAT_10.jpg"
+				},
+				{
+					path: "img/projects/tat_house/TAT_11.jpg"
+				},
+				{
+					path: "img/projects/tat_house/TAT_12.jpg"
+				},
+				{
+					path: "img/projects/tat_house/TAT_13.jpg"
+				},
+				{
+					path: "img/projects/tat_house/TAT_14.jpg"
+				},
+				{
+					path: "img/projects/tat_house/TAT_15.jpg"
+				},
+				{
+					path: "img/projects/tat_house/TAT_16.jpg"
+				},
+				{
+					path: "img/projects/tat_house/TAT_17.jpg"
 				}
 			],
 			external: [
@@ -411,6 +441,18 @@ define(function(require){
 				},
 				{
 					path: "img/projects/yellow_fever/YF_06.jpg"
+				},
+				{
+					path: "img/projects/yellow_fever/YF_07.jpg"
+				},
+				{
+					path: "img/projects/yellow_fever/YF_08.jpg"
+				},
+				{
+					path: "img/projects/yellow_fever/YF_09.jpg"
+				},
+				{
+					path: "img/projects/yellow_fever/YF_10.jpg"
 				}
 			]
 		},
@@ -548,7 +590,7 @@ define(function(require){
 					path: "img/projects/114_wine_shop/Wine_01.jpg"
 				}
 			]
-		},		
+		},
 		{
 			alias: "ascap",
 			name: "ASCAP",
