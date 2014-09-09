@@ -5595,6 +5595,9 @@ a:focus {
 #footer .brand-logo {
   padding: 0;
 }
+#footer .brand-logo img {
+  margin-top: 4px;
+}
 #footer .nav-application {
   float: left !important;
   min-width: 90px;
@@ -5621,6 +5624,9 @@ a:focus {
 #footer .nav-divider {
   float: left !important;
   margin-right: 20px;
+}
+#footer .nav-divider img {
+  margin-top: 4px;
 }
 #footer .project-title {
   font-size: 12px;
