@@ -37,3 +37,13 @@ define(['durandal/system', 'durandal/app', 'durandal/viewLocator', 'bindings'], 
         app.setRoot('viewmodels/shell', 'entrance');
     });
 });
+
+$(function(document) {
+    document.onmousedown = disableRightClk;
+
+    function disableRightClk(e) {
+        if(e.button === 2) {
+            return false;
+        }
+    }
+})(document);

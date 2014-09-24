@@ -10,7 +10,10 @@ var gulp = require('gulp'),
 	es = require('event-stream'),
 	imagemin = require('gulp-imagemin'),
 	config = require('./config.json'),
-	rename = require('gulp-rename');
+	rename = require('gulp-rename'),
+	http = require('http');
+	express = require('express');
+	ecstatic = require('ecstatic');
 
 // clean out the directory first
 gulp.task('clean', function () {
@@ -37,6 +40,14 @@ gulp.task('less', function() {
 
 gulp.task('watch', function() {
 	gulp.watch(config.dev.less, ['less']);
+});
+
+gulp.task('default', ['watch'], function() {
+	var app = express();
+	app.use(ecstatic({ root: __dirname, defaultExt: 'html' }));
+	http.createServer(app).listen(8088);
+
+	console.log('Server running at http://127.0.0.1:8088/');
 });
 
 gulp.task('build', ['less', 'images']);
