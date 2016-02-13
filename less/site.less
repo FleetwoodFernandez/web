@@ -15,11 +15,11 @@ body {
 }
 
 body {
-    background-image: url('/img/4.jpg');
+    background-image: url('/img/1.jpg');
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
-	background-position: center center;
+	background-position: 100px center;
 }
 
 // IE/Firefox set height hack
@@ -76,7 +76,7 @@ a {
 	overflow-y: auto;
 	position: absolute;
 	top: 0;
-	.box-sizing(100%);
+	box-sizing: border-box;
 }
 
 #footer {
@@ -94,9 +94,6 @@ a {
 	}
 	.brand-logo {
 		padding: 0;
-		img {
-			margin-top: 4px;
-		}
 	}
 	.nav-application {
 	 	.pull-left;
@@ -127,9 +124,6 @@ a {
 	.nav-divider {
 		.pull-left;
 		margin-right: 20px;
-		img {
-			margin-top: 4px;
-		}
 	}
 
 	.project-title {
@@ -230,6 +224,10 @@ a {
 
 	&.about-profile-link {
 		margin-top: 11px;
+
+		a {
+			margin-right: 10px;
+		}
 	}
 }
 

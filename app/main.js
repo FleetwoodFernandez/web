@@ -21,7 +21,7 @@
     }
 });
 
-define(['durandal/system', 'durandal/app', 'durandal/viewLocator', 'bindings'],  function (system, app, viewLocator, bindings) {
+define(['durandal/system', 'durandal/app', 'durandal/viewLocator', 'bindings', 'jquery'],  function (system, app, viewLocator, bindings, $) {
     //>>excludeStart("build", true);
     //system.debug(true);
     //>>excludeEnd("build");
@@ -36,9 +36,7 @@ define(['durandal/system', 'durandal/app', 'durandal/viewLocator', 'bindings'], 
         viewLocator.useConvention();
         app.setRoot('viewmodels/shell', 'entrance');
     });
-});
 
-$(function(document) {
     document.onmousedown = disableRightClk;
 
     function disableRightClk(e) {
@@ -46,4 +44,4 @@ $(function(document) {
             return false;
         }
     }
-})(document);
+});

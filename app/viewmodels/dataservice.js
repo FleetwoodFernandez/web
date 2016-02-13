@@ -195,42 +195,27 @@ define(function(require){
 			]
 		},
 		{
-			alias: "Peninsula",
-			name: "Peninsula Pacific",
-			location: "LOS ANGELES, CA",
-			description: "<p>The design of this executive office suite blends the bright spirit of the Southern California coast, where the CEO of the company resides, and the robust character of a Sun Valley horse ranch, his second home. Combined, the space also represents the entertainment holding company’s philosophy of relaxed hospitality. White lacquered walls balance the dark reclaimed oak plank flooring. Deep indigo lacquer panels wrap into the boardroom, and clear glass partitions allow uninterrupted views of Century City’s skyline. Fleetwood/Fernandez custom designed most of the furnishings using a palette of noble materials: solid walnut, oiled bronze, and marble.</p>",
-			thumbnail: "img/projects/peninsula/Peninsula_thumb.jpg",
-			categories: ["interiors"],
+			alias: "southamptonResidence",
+			name: "Southampton Residence",
+			location: "Southampton, NY",
+			description: "<p>In Permit Phase. More information coming soon.</p>",
+			thumbnail: "img/projects/southampton/Southampton_thumbnail.jpg",
+			categories: ["commercial"],
 			assets: [
 				{
- 					path: "img/projects/peninsula/Peninsula_01.jpg"
+					path: "img/projects/southampton/Southampton_1.jpg"
 				},
 				{
-					path: "img/projects/peninsula/Peninsula_02.jpg"
+					path: "img/projects/southampton/Southampton_2.jpg"
 				},
 				{
-					path: "img/projects/peninsula/Peninsula_04.jpg"
+					path: "img/projects/southampton/Southampton_3.jpg"
 				},
 				{
-					path: "img/projects/peninsula/Peninsula_05.jpg"
+					path: "img/projects/southampton/Southampton_4.jpg"
 				},
 				{
-					path: "img/projects/peninsula/Peninsula_06.jpg"
-				},
-				{
-					path: "img/projects/peninsula/Peninsula_07.jpg"
-				},
-				{
-					path: "img/projects/peninsula/Peninsula_08.jpg"
-				},
-				{
-					path: "img/projects/peninsula/Peninsula_03.jpg"
-				},
-				{
-					path: "img/projects/peninsula/Peninsula_09.jpg"
-				},
-				{
-					path: "img/projects/peninsula/Peninsula_10.jpg"
+					path: "img/projects/southampton/Southampton_5.jpg"
 				}
 			]
 		},
@@ -355,39 +340,39 @@ define(function(require){
 			]
 		},
 		{
-			alias: "FinancialFirm",
-			name: "Financial Firm",
-			location: "MULTIPLE LOCATIONS",
-			description: "<p>Fleetwood / Fernandez has completed 10 projects throughout the US for this leading financial sector firm, ranging in size from a boutique marketing center to multi-floor restacks.</p><p>Santa Monica: The project for the firm’s headquarters in Santa Monica was a 120,000 sq. ft. four-floor phased reorganization, expansion and renovation, including a new conference center, training facility, serving pantries and executive lounge.</p><p>New York: Several disassociated departments from different buildings were consolidated into three floors of a newly remodeled building on Park Avenue.  A creative planning effort was implemented to achieve the desired open plan flow of space while managing the building’s challenges -- large columns spaced closely at sixteen feet apart, irregular shaped floor plate, and low ceilings. Low workstations and oversized glass sidelights along office fronts allow copious natural light into the space, and rich natural materials and bold color accents complete the palette.</p>",
-			thumbnail: "img/projects/wells_fargo_capital_finance/Wells_thumbnail.jpg",
-			categories: ["interiors"],
+			alias: "globalPrepAcademy",
+			name: "Global Prep Academy",
+			location: "Valencia, CA",
+			description: "<p>GPA was built with the mission that 21st century students must be successful academically and globally; they should be prepared to show colleges that beyond earning high test scores and grades, they are intellectually curious and active global citizens. Its founder, David Najar, imagined a welcoming and communal space that engages students with passion, humor and intelligence, and hired Fleetwood Fernandez to bring his vision to life. The space departs from the classic tutoring classroom box, with different learning environments for different subjects. Plywood bleacher style seating covered in Astroturf accommodates lectures and communal break time; a quite library with an array of books and music exposes students to subjects and narratives beyond that of SAT prep work; a small study room allows for club meetings and becomes gaming central during breaks; and two classrooms with flexible furniture are used for more traditional classroom setups. The architecture is intentionally dynamic and expressive, underlined by a bold color palette. Materials used, like concrete, tectum ceilings, and plywood, are industrial and durable, and the furniture adds more color and whimsy.</p>",
+			thumbnail: "img/projects/global_prep_academy/GPA_thumbnail.jpg",
+			categories: ["commercial"],
 			assets: [
 				{
-					path: "img/projects/wells_fargo_capital_finance/Wells_01.jpg"
+					path: "img/projects/global_prep_academy/GPA_1.jpg"
 				},
 				{
-					path: "img/projects/wells_fargo_capital_finance/Wells_02.jpg"
+					path: "img/projects/global_prep_academy/GPA_2.jpg"
 				},
 				{
-					path: "img/projects/wells_fargo_capital_finance/Wells_03.jpg"
+					path: "img/projects/global_prep_academy/GPA_3.jpg"
 				},
 				{
-					path: "img/projects/wells_fargo_capital_finance/Wells_04.jpg"
+					path: "img/projects/global_prep_academy/GPA_4.jpg"
 				},
 				{
-					path: "img/projects/wells_fargo_capital_finance/Wells_05.jpg"
+					path: "img/projects/global_prep_academy/GPA_5.jpg"
 				},
 				{
-					path: "img/projects/wells_fargo_capital_finance/Wells_06.jpg"
+					path: "img/projects/global_prep_academy/GPA_6.jpg"
 				},
 				{
-					path: "img/projects/wells_fargo_capital_finance/Wells_07.jpg"
+					path: "img/projects/global_prep_academy/GPA_7.jpg"
 				},
 				{
-					path: "img/projects/wells_fargo_capital_finance/Wells_08.jpg"
+					path: "img/projects/global_prep_academy/GPA_8.jpg"
 				},
 				{
-					path: "img/projects/wells_fargo_capital_finance/Wells_09.jpg"
+					path: "img/projects/global_prep_academy/GPA_9.jpg"
 				}
 			]
 		},
@@ -417,45 +402,45 @@ define(function(require){
 			]
 		},
 		{
-			alias: "yellowfever",
-			name: "Yellow Fever",
-			location: "TORRANCE, CA",
-			description: "<p>The owners of this casual Asian food restaurant wanted a space aligned with their mission to offer good-tasting, healthful cuisine inspired by a mash up of American and Asian cultures. Featuring a combination of industrial materials and more expressive finishes like handmade wood furniture and ceramic tile, the restaurant finds its focal point above the banquette seating with an organic installation of hundreds of melamine bowls. The urban counterculture character of the space is reflected in details throughout: metal wire seating, bare bulb pendants in bright colors, exposed ductwork, and site specific commissioned artwork by local artists.</p>",
-			thumbnail: "img/projects/yellow_fever/YF_thumbnail.jpg",
-			categories: ["commercial"],
-			assets: [
-				{
-					path: "img/projects/yellow_fever/YF_01.jpg"
+					alias: "yellowfever",
+					name: "Yellow Fever",
+					location: "TORRANCE, CA",
+					description: "<p>The owners of this casual Asian food restaurant wanted a space aligned with their mission to offer good-tasting, healthful cuisine inspired by a mash up of American and Asian cultures. Featuring a combination of industrial materials and more expressive finishes like handmade wood furniture and ceramic tile, the restaurant finds its focal point above the banquette seating with an organic installation of hundreds of melamine bowls. The urban counterculture character of the space is reflected in details throughout: metal wire seating, bare bulb pendants in bright colors, exposed ductwork, and site specific commissioned artwork by local artists.</p>",
+					thumbnail: "img/projects/yellow_fever/YF_thumbnail.jpg",
+					categories: ["commercial"],
+					assets: [
+						{
+							path: "img/projects/yellow_fever/YF_01.jpg"
+						},
+						{
+							path: "img/projects/yellow_fever/YF_02.jpg"
+						},
+						{
+							path: "img/projects/yellow_fever/YF_03.jpg"
+						},
+						{
+							path: "img/projects/yellow_fever/YF_04.jpg"
+						},
+						{
+							path: "img/projects/yellow_fever/YF_05.jpg"
+						},
+						{
+							path: "img/projects/yellow_fever/YF_06.jpg"
+						},
+						{
+							path: "img/projects/yellow_fever/YF_07.jpg"
+						},
+						{
+							path: "img/projects/yellow_fever/YF_08.jpg"
+						},
+						{
+							path: "img/projects/yellow_fever/YF_09.jpg"
+						},
+						{
+							path: "img/projects/yellow_fever/YF_10.jpg"
+						}
+					]
 				},
-				{
-					path: "img/projects/yellow_fever/YF_02.jpg"
-				},
-				{
-					path: "img/projects/yellow_fever/YF_03.jpg"
-				},
-				{
-					path: "img/projects/yellow_fever/YF_04.jpg"
-				},
-				{
-					path: "img/projects/yellow_fever/YF_05.jpg"
-				},
-				{
-					path: "img/projects/yellow_fever/YF_06.jpg"
-				},
-				{
-					path: "img/projects/yellow_fever/YF_07.jpg"
-				},
-				{
-					path: "img/projects/yellow_fever/YF_08.jpg"
-				},
-				{
-					path: "img/projects/yellow_fever/YF_09.jpg"
-				},
-				{
-					path: "img/projects/yellow_fever/YF_10.jpg"
-				}
-			]
-		},
 		{
 			alias: "dac",
 			name: "DAC",
@@ -513,7 +498,7 @@ define(function(require){
 			alias: "mashouse",
 			name: "MAS House",
 			location: "LOS ANGELES, CA",
-			description: "<p>In Construction, more information and images coming soon.</p>",
+			description: "<p>This mid-century modern two story house had suffered through unfortunate transformations in the eighties that obscured its original design but thankfully left the basic structure and window configuration intact. A careful removal of walls to eliminate obsolete circulation, the relocation of the kitchen and the reconfiguration of some of the bedrooms was all the construction needed to restore the home to the spirit of its era. The same agenda of simplicity and integration with nature guided the design for the new kitchen and bathrooms, and the selection for all finishes throughout.</p>",
 			thumbnail: "img/projects/mas_house/MAS_thumbnail.jpg",
 			categories: ["residential"],
 			assets: [
@@ -534,6 +519,9 @@ define(function(require){
 				},
 				{
 					path: "img/projects/mas_house/MAS_06.jpg"
+				},
+				{
+					path: "img/projects/mas_house/MAS_07.jpg"
 				}
 			]
 		},
@@ -579,43 +567,120 @@ define(function(require){
 			]
 		},
 		{
-			alias: "114WineShop",
-			name: "114 Wine Shop",
+			alias: "honorWinesSpirits",
+			name: "Honor Wines and Spirits",
 			location: "BEVERLY HILLS, CA",
-			description: "<p>In Construction, more information and images coming soon.</p>",
-			thumbnail: "img/projects/114_wine_shop/Wine_Thumbnail.jpg",
+			description: "<p>Envisioned as a natural extension to neighborhood favorite Honor Bar and adjacent South Beverly Grill, the shop grew out of the need to expand bottle storage for the restaurants but also the desire to offer their carefully curated wine and spirit selections to customers and passersby. The space is industrial and minimal yet a welcoming atmosphere is achieved with warm materials like plywood cabinetry and solid wood display tables. The ductwork was left exposed, and the concrete wall was a happy discovery uncovered by demolition. The shop has also become the permanent home of a treasured collectible of the owners, a vintage Indian motorcycle.</p>",
+			thumbnail: "img/projects/honor_wine_spirits/HON_thumbnail.jpg",
 			categories: ["commercial"],
 			assets: [
 				{
-					path: "img/projects/114_wine_shop/Wine_01.jpg"
+					path: "img/projects/honor_wine_spirits/HON_01.jpg"
+				},
+				{
+					path: "img/projects/honor_wine_spirits/HON_02.jpg"
+				},
+				{
+					path: "img/projects/honor_wine_spirits/HON_03.jpg"
+				},
+				{
+					path: "img/projects/honor_wine_spirits/HON_04.jpg"
+				},
+				{
+					path: "img/projects/honor_wine_spirits/HON_05.jpg"
+				},
+				{
+					path: "img/projects/honor_wine_spirits/HON_06.jpg"
+				},
+				{
+					path: "img/projects/honor_wine_spirits/HON_07.jpg"
+				},
+				{
+					path: "img/projects/honor_wine_spirits/HON_08.jpg"
+				},
+				{
+					path: "img/projects/honor_wine_spirits/HON_09.jpg"
 				}
 			]
 		},
 		{
-			alias: "ascap",
-			name: "ASCAP",
+			alias: "yellowfeverII",
+			name: "Yellow Fever II",
+			location: "Venice, CA",
+			description: "<p>The second location of this ever popular restaurant is under construction. A bit more grown up but just as cool as the original. Stay tuned for final photos soon.</p>",
+			thumbnail: "img/projects/yellow_fever_II/YF2_thumbnail.jpg",
+			categories: ["commercial"],
+			assets: [
+				{
+					path: "img/projects/yellow_fever_II/YF2_1.jpg"
+				},
+				{
+					path: "img/projects/yellow_fever_II/YF2_2.jpg"
+				},
+				{
+					path: "img/projects/yellow_fever_II/YF2_3.jpg"
+				}
+			]
+		},
+		{
+			alias: "Peninsula",
+			name: "Peninsula Pacific",
 			location: "LOS ANGELES, CA",
-			description: "<p>The world’s leader in performance royalties and music licensing for songwriters and composers, ASCAP was looking to completely renovate their existing offices in the iconic Director’s Guild of America building on Sunset. As a result of 20 years of growth in two disconnected suites, the space was incoherent and outdated.   With clear circulation, large amounts of glazing, and sustainable materials, the new design embodies the member-owned company’s accessibility and open book policy in a cutting edge active and collaborative environment.</p>",
-			thumbnail: "img/projects/ascap/ASCAP_thumbnail.jpg",
+			description: "<p>The design of this executive office suite blends the bright spirit of the Southern California coast, where the CEO of the company resides, and the robust character of a Sun Valley horse ranch, his second home. Combined, the space also represents the entertainment holding company’s philosophy of relaxed hospitality. White lacquered walls balance the dark reclaimed oak plank flooring. Deep indigo lacquer panels wrap into the boardroom, and clear glass partitions allow uninterrupted views of Century City’s skyline. Fleetwood/Fernandez custom designed most of the furnishings using a palette of noble materials: solid walnut, oiled bronze, and marble.</p>",
+			thumbnail: "img/projects/peninsula/Peninsula_thumb.jpg",
 			categories: ["interiors"],
 			assets: [
 				{
-					path: "img/projects/ascap/ASCAP_01.jpg"
+ 					path: "img/projects/peninsula/Peninsula_01.jpg"
 				},
 				{
-					path: "img/projects/ascap/ASCAP_02.jpg"
+					path: "img/projects/peninsula/Peninsula_02.jpg"
 				},
 				{
-					path: "img/projects/ascap/ASCAP_03.jpg"
+					path: "img/projects/peninsula/Peninsula_04.jpg"
 				},
 				{
-					path: "img/projects/ascap/ASCAP_04.jpg"
+					path: "img/projects/peninsula/Peninsula_05.jpg"
 				},
 				{
-					path: "img/projects/ascap/ASCAP_05.jpg"
+					path: "img/projects/peninsula/Peninsula_06.jpg"
 				},
 				{
-					path: "img/projects/ascap/ASCAP_06.jpg"
+					path: "img/projects/peninsula/Peninsula_07.jpg"
+				},
+				{
+					path: "img/projects/peninsula/Peninsula_08.jpg"
+				},
+				{
+					path: "img/projects/peninsula/Peninsula_03.jpg"
+				},
+				{
+					path: "img/projects/peninsula/Peninsula_09.jpg"
+				},
+				{
+					path: "img/projects/peninsula/Peninsula_10.jpg"
+				}
+			]
+		},
+		{
+			alias: "theLab",
+			name: "The Lab",
+			location: "Pasadena, CA",
+			description: "<p>The location for this new restaurant is in a historic old building that once housed Albert Einstein’s lab in old town Pasadena. The concept for the design blends references to old science labs (the owners are both scientists) with the location’s industrial character. The project is in the construction document phase, more images coming soon.</p>",
+			thumbnail: "img/projects/the_lab/LAB_thumbnail.jpg",
+			categories: ["commercial"],
+			assets: [
+				{
+					path: "img/projects/the_lab/LAB_1.jpg"
+				},
+				{
+					path: "img/projects/the_lab/LAB_2.jpg"
+				},
+				{
+					path: "img/projects/the_lab/LAB_3.jpg"
+				},
+				{
+					path: "img/projects/the_lab/LAB_4.jpg"
 				}
 			]
 		}

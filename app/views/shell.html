@@ -1,8 +1,8 @@
 ﻿<div id="wrap" data-bind="router: { transition:'entrance', fadeOnly: true }"></div>
 <div id="footer">
     <div class="row">
-        <div class="col-md-2"><a class="brand-logo" href="#"><img src="img/logo.png" width="60" height="60" /></a></div>
-        <div class="col-md-7">
+        <div class="col-md-4"><a class="brand-logo" href="#"><img src="img/logo.png" width="340" height="68" /></a></div>
+        <div class="col-md-5">
             <ul class="nav nav-application" data-bind="foreach: mainNavigation">
                 <li data-bind="css: { active: $parent.markActive($data) }">
                     <!-- ko if: $parent.isExternal($data) -->
@@ -13,16 +13,8 @@
                     <!-- /ko -->
                 </li>
             </ul>
-            <!-- ko if: route() === 'projects' || route() === 'details' -->
+            <!-- ko if: route() === 'details' -->
             <span class="nav-divider"><img src="img/slash.png" width="41" height="60" /></span>
-            <ul class="nav nav-application" data-bind="foreach: subNavigation('categories')">
-                <li data-bind="css: { active: $parent.pageFilter() === title }">
-                    <a data-bind="attr: { href: hash + settings.id }, html: title"></a>
-                </li>
-            </ul>
-                <!-- ko if: project() -->
-                    <span class="nav-divider"><img src="img/slash.png" width="41" height="60" /></span>
-                <!-- /ko -->
             <!-- /ko -->
             <!-- ko if: route() === 'about' -->
             <span class="nav-divider"><img src="img/slash.png" width="41" height="60" /></span>
