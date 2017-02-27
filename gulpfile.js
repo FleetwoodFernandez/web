@@ -1,24 +1,38 @@
 /* global require */
 
-var gulp = require('gulp'),
-	clean = require('gulp-clean'),
-	concat = require('gulp-concat')
-	jshint = require('gulp-jshint'),
-	less = require('gulp-less'),
-	uglify = require('gulp-uglify'),
-	minifyCSS = require('gulp-minify-css'),
-	es = require('event-stream'),
-	imagemin = require('gulp-imagemin'),
-	config = require('./config.json'),
-	rename = require('gulp-rename'),
-	http = require('http');
-	express = require('express');
-	ecstatic = require('ecstatic');
+var gulp = require('gulp');
+var del = require('del');
+var jshint = require('gulp-jshint');
+var less = require('gulp-less');
+var uglify = require('gulp-uglify');
+var cssnano = require('gulp-cssnano');
+var es = require('event-stream');
+var imagemin = require('gulp-imagemin');
+var config = require('./config.json');
+var rename = require('gulp-rename');
+var http = require('http');
+var express = require('express');
+var ecstatic = require('ecstatic');
 
 // clean out the directory first
 gulp.task('clean', function () {
-	return gulp.src('./build', { read: false })
-		.pipe(clean());
+	return del('./build');
+});
+
+gulp.task('scripts', function() {
+	var requirejs = require('requirejs');
+
+	return gulp.src('./app/**/*.js')
+		.pipe(requirejs(function(file) {
+			return {
+				optimize: 'uglify',
+				baseUrl: './app/',
+				paths: {
+					'lib': './lib/'
+				}
+			};
+		}))
+		.pipe(gulp.dest('./build/js'));
 });
 
 // copy images to the build folder. we have a seperate task for this
@@ -33,7 +47,7 @@ gulp.task('images', function() {
 gulp.task('less', function() {
 	return gulp.src(config.dev.less + 'bootstrap.less')
 		.pipe(less())
-		.pipe(minifyCSS())
+		.pipe(cssnano())
 		.pipe(rename('bootstrap.css'))
 		.pipe(gulp.dest(config.dev.styles));
 });

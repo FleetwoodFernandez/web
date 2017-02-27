@@ -11,6 +11,7 @@
 	"dev": {
 		"images": "./img/",
 		"less": "./less/",
-		"styles": "./css/"
+		"styles": "./css/",
+		"js": "./js/**.js"
 	}
 }
